@@ -1,0 +1,81 @@
+:root {
+  color-scheme: dark;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #2b0f0f;
+  color: #f8e7e7;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: radial-gradient(circle at top, #491212 0%, #2b0f0f 70%);
+}
+
+.container {
+  width: min(100%, 960px);
+  padding: 36px;
+  background: rgba(44, 12, 12, 0.95);
+  border-radius: 28px;
+  box-shadow: 0 28px 80px rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(148, 63, 63, 0.22);
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.title {
+  margin: 0;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  color: #ffe3e3;
+}
+
+.subtitle,
+.content p {
+  margin: 0;
+  line-height: 1.8;
+  font-size: 1.05rem;
+}
+
+.subtitle {
+  margin-top: 12px;
+  color: #f4c6c6;
+  max-width: 720px;
+}
+
+.content p {
+  color: #e8c8c8;
+}
+
+.content a {
+  color: #f97316;
+  text-decoration: none;
+}
+
+.content a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 560px) {
+  .container {
+    padding: 24px;
+  }
+
+  .subtitle,
+  .content p {
+    font-size: 1rem;
+  }
+}

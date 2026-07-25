@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Contacto</title>
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f4f4f4;
+    }
+
+    .card {
+      width: min(320px, 100%);
+      padding: 24px;
+      border-radius: 12px;
+      background: #fff;
+      box-shadow: 0 12px 24px rgba(0, 0, 0, .08);
+    }
+
+    h2 {
+      margin: 0 0 14px;
+      font-size: 1.5rem;
+    }
+
+    p {
+      margin: 0 0 18px;
+      color: #444;
+      line-height: 1.6;
+    }
+
+    .actions {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 18px;
+    }
+
+    .btn {
+      flex: 1;
+      padding: 12px;
+      border-radius: 8px;
+      color: #fff;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    .call { background: #28a745; }
+    .message { background: #007bff; }
+
+    label {
+      display: block;
+      margin: 12px 0 6px;
+      font-size: .95rem;
+    }
+
+    input,
+    textarea,
+    button {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font: inherit;
+    }
+
+    textarea { resize: vertical; }
+
+    button {
+      margin-top: 12px;
+      border: none;
+      background: #333;
+      color: #fff;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h2>Contacto</h2>
+    <p>Para llamada directa usa los botones o el enlace telefónico.</p>
+
+    <div class="actions">
+      <a class="btn call" href="tel:+34123456789">Llamar</a>
+      <a class="btn message" href="sms:+34123456789">Enviar SMS</a>
+    </div>
+
+    <form action="mailto:tu@correo.com" method="post" enctype="text/plain">
+      <label for="name">Nombre</label>
+      <input id="name" name="name" type="text">
+
+      <label for="msg">Mensaje</label>
+      <textarea id="msg" name="message" rows="4"></textarea>
+
+      <button type="submit">Enviar por correo</button>
+    </form>
+  </div>
+</body>
+</html>
